@@ -83,6 +83,7 @@ body {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
+    flex-wrap: wrap;
 }
 
 .card__price--new {
@@ -100,7 +101,7 @@ body {
 
 .card-btn {
     width: 100%;
-    padding: 20px 0;
+    padding: 20px 16px;
     border-radius: 10px;
     background-color: var(--dark-cyan);
     color: var(--white);
@@ -129,6 +130,10 @@ body {
 }
 
 @media screen and (min-width: 375px) and (max-width: 1440px) {
+    body {
+        height: auto;
+    }
+    
     .card__img--mobile {
         display: block;
         
@@ -140,6 +145,7 @@ body {
 
     .card {
         display: block;
+        margin-top: 20px;
     }
 
     .card__img {
